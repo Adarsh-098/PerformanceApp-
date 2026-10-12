@@ -1,56 +1,31 @@
-# Welcome to your Expo app 👋
+React Native Performance Optimization
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+1. Objective
 
-## Get started
+The objective of this assignment was to improve the rendering performance, frame rate, and responsiveness of a React Native application.
 
-1. Install dependencies
+2. Tools Used
+   Visual Studio Code
+   React Native
+   Expo
+   JavaScript/TypeScript
+   Android device or emulator
+3. Optimization Techniques
+   FlatList: Used virtualized list rendering to handle 1,000 task items efficiently.
+   React.memo: Reduced unnecessary rendering of task rows.
+   useCallback: Maintained stable callback references.
+   useMemo: Cached filtered task results until relevant dependencies changed.
+   getItemLayout: Reduced layout measurement work for fixed-height list items.
+4. Testing Method
 
-   ```bash
-   npm install
-   ```
+The application was tested before and after optimization using the same device and equivalent interactions. Tests included scrolling through the list, searching for tasks, and marking tasks as complete.
 
-2. Start the app
+5. Results
+   Before optimization: [Enter observations and measurements].
+   After optimization: [Enter observations and measurements].
+   FPS before: [Enter measured FPS].
+   FPS after: [Enter measured FPS].
+   Responsiveness: [Describe the observed difference].
+6. Conclusion
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The application was optimized using list virtualization, memoization, stable callbacks, and fixed item layout information. These techniques are intended to reduce unnecessary rendering and improve responsiveness. The actual performance improvement was evaluated using the recorded test results.
